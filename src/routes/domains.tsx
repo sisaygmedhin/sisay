@@ -165,38 +165,26 @@ const additionalDomains = [
   },
 ];
 
+const domainSectionFrame =
+  "rounded-2xl border-2 border-primary/35 bg-card/40 p-6 shadow-[0_0_0_1px_oklch(0.65_0.12_255_/_0.08)] md:p-8";
+
 function DomainCard({
   title,
   blurb,
   items,
-  accent = "primary",
 }: {
   title: string;
   blurb: string;
   items: string[];
-  accent?: "primary" | "muted";
 }) {
-  const bulletClass =
-    accent === "primary"
-      ? "bg-primary"
-      : "bg-muted-foreground/70";
-
   return (
     <div className="rounded-xl border border-border bg-card p-6 transition hover:border-primary/60">
-      <h2
-        className={
-          accent === "primary"
-            ? "text-lg font-semibold text-primary"
-            : "text-base font-semibold text-foreground"
-        }
-      >
-        {title}
-      </h2>
+      <h2 className="text-lg font-semibold text-primary">{title}</h2>
       <p className="mt-1 text-xs text-muted-foreground">{blurb}</p>
       <ul className="mt-4 grid grid-cols-1 gap-2 text-sm text-muted-foreground sm:grid-cols-2">
         {items.map((i) => (
           <li key={i} className="flex items-start gap-2">
-            <span className={`mt-2 h-1.5 w-1.5 flex-none rounded-full ${bulletClass}`} />
+            <span className="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-primary" />
             <span>{i}</span>
           </li>
         ))}
@@ -225,7 +213,7 @@ function DomainsPage() {
         </p>
       </header>
 
-      <div className="rounded-2xl border-2 border-primary/35 bg-card/40 p-6 shadow-[0_0_0_1px_oklch(0.65_0.12_255_/_0.08)] md:p-8">
+      <div className={domainSectionFrame}>
         <div className="border-b border-border pb-6 md:flex md:items-end md:justify-between md:gap-6">
           <div>
             <p className="text-xs font-semibold uppercase tracking-widest text-primary">
@@ -249,34 +237,32 @@ function DomainsPage() {
               title={g.title}
               blurb={g.blurb}
               items={g.items}
-              accent="primary"
             />
           ))}
         </div>
       </div>
 
-      <div className="mt-16">
-        <header className="mb-8 text-center">
-          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+      <div className={`mt-16 ${domainSectionFrame}`}>
+        <div className="border-b border-border pb-6">
+          <p className="text-xs font-semibold uppercase tracking-widest text-primary">
             Broader delivery
           </p>
-          <h2 className="mt-2 text-xl font-bold tracking-tight md:text-2xl">
+          <h2 className="mt-2 text-2xl font-bold tracking-tight md:text-3xl">
             Telecom, location, rewards, commerce &amp; travel
           </h2>
-          <p className="mx-auto mt-3 max-w-2xl text-sm text-muted-foreground">
+          <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
             Supporting coverage beyond the core book — same QA discipline,
             scoped to each industry&apos;s constraints and release cadence.
           </p>
-        </header>
+        </div>
 
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {additionalDomains.map((g) => (
             <DomainCard
               key={g.title}
               title={g.title}
               blurb={g.blurb}
               items={g.items}
-              accent="muted"
             />
           ))}
         </div>

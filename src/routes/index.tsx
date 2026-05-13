@@ -101,14 +101,14 @@ function Index() {
             </div>
           </div>
           <div>
-            <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary">
               Also practiced in
             </p>
             <div className="mt-5 flex flex-wrap justify-center gap-2">
               {otherIndustries.map((d) => (
                 <span
                   key={d}
-                  className="rounded-full border border-border bg-card px-4 py-1.5 text-sm text-muted-foreground"
+                  className="rounded-full border border-primary/40 bg-primary/10 px-4 py-1.5 text-sm font-medium text-foreground"
                 >
                   {d}
                 </span>
