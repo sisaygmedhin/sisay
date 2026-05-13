@@ -30,8 +30,9 @@ function ContactPage() {
         Let's build reliable platforms
       </h1>
       <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
-        Open to QA leadership and Product Owner roles in iGaming, betting,
-        fintech and platform engineering teams.
+        Open to QA leadership and Product Owner roles — strongest fit for
+        betting &amp; iGaming, plus telecom, location services, rewards,
+        payments &amp; commerce, travel-tech and broader platform teams.
       </p>
 
       <div className="mt-12 grid gap-4 sm:grid-cols-3">

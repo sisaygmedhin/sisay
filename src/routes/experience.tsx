@@ -7,7 +7,7 @@ export const Route = createFileRoute("/experience")({
       {
         name: "description",
         content:
-          "QA leadership across betting, fintech, telecom, and payments — Convex Technologies, Locance, Arifpay, Safaricom Ethiopia and more.",
+          "QA leadership with primary depth on betting platforms; also telecom, location intelligence, rewards & recognition, payments, commerce and travel-adjacent integrations.",
       },
     ],
   }),
@@ -118,8 +118,10 @@ function ExperiencePage() {
           Experience
         </h1>
         <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-          QA leadership and product ownership across betting platforms, fintech,
-          telecom and payments.
+          Strongest depth on betting &amp; iGaming; broader delivery across
+          telecom (VAS), location APIs, employee rewards platforms, payments
+          &amp; commerce, and integration-heavy domains including travel-style
+          transactional flows.
         </p>
       </header>
 

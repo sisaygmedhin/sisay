@@ -8,14 +8,14 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "QA Manager and Product Owner with 8+ years across betting platforms — casino, sportsbook, gamification, identity, notifications.",
+          "QA Manager and Product Owner with 8+ years — primary depth on betting & iGaming; also telecom, location intelligence, rewards, commerce and travel-related integrations.",
       },
     ],
   }),
   component: Index,
 });
 
-const domains = [
+const bettingCoverage = [
   "Casino & Aggregators",
   "Sportsbook",
   "Live Betting & Cashout",
@@ -26,6 +26,14 @@ const domains = [
   "Identity & KYC",
   "Notifications",
   "Back Office & CRM",
+];
+
+const otherIndustries = [
+  "Telecom & VAS",
+  "Location intelligence",
+  "Rewards & recognition",
+  "Payments & commerce",
+  "Travel & mobility",
 ];
 
 function Index() {
@@ -54,10 +62,11 @@ function Index() {
           QA Manager &amp; Product Owner
         </p>
         <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
-          Specializing in iGaming &amp; betting platforms — Casino, Sportsbook,
-          Gamification, Identity, and Notification systems. 8+ years building
-          reliable test strategies, automation frameworks, and product roadmaps
-          that ship.
+          Primary focus on iGaming &amp; betting platforms — casino through back
+          office — with supporting delivery across telecom, location-smart
+          services, employee rewards, payments &amp; commerce, and travel-related
+          integrations. 8+ years building reliable test strategies, automation
+          frameworks, and product roadmaps that ship.
         </p>
 
         <div className="mt-10 flex flex-wrap justify-center gap-3">
@@ -75,20 +84,47 @@ function Index() {
           </Link>
         </div>
 
-        <div className="mt-16">
-          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-            Platform Coverage
-          </p>
-          <div className="mt-5 flex flex-wrap justify-center gap-2">
-            {domains.map((d) => (
-              <span
-                key={d}
-                className="rounded-full border border-border bg-card px-4 py-1.5 text-sm text-foreground"
-              >
-                {d}
-              </span>
-            ))}
+        <div className="mt-16 space-y-10">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary">
+              Betting &amp; iGaming — primary coverage
+            </p>
+            <div className="mt-5 flex flex-wrap justify-center gap-2">
+              {bettingCoverage.map((d) => (
+                <span
+                  key={d}
+                  className="rounded-full border border-primary/40 bg-primary/10 px-4 py-1.5 text-sm font-medium text-foreground"
+                >
+                  {d}
+                </span>
+              ))}
+            </div>
           </div>
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+              Also practiced in
+            </p>
+            <div className="mt-5 flex flex-wrap justify-center gap-2">
+              {otherIndustries.map((d) => (
+                <span
+                  key={d}
+                  className="rounded-full border border-border bg-card px-4 py-1.5 text-sm text-muted-foreground"
+                >
+                  {d}
+                </span>
+              ))}
+            </div>
+          </div>
+          <p className="text-center text-sm text-muted-foreground">
+            <Link
+              to="/domains"
+              className="font-medium text-primary underline-offset-4 hover:underline"
+            >
+              Full domain breakdown
+            </Link>{" "}
+            — betting depth plus telecom, location, rewards, commerce &amp;
+            travel.
+          </p>
         </div>
       </div>
     </section>

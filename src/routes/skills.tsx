@@ -7,7 +7,7 @@ export const Route = createFileRoute("/skills")({
       {
         name: "description",
         content:
-          "QA management, product ownership and betting-platform domain expertise: casino, sportsbook, gamification, identity, notifications.",
+          "QA management and PO depth on betting platforms; supporting domains include telecom, location intelligence, rewards, commerce and travel-adjacent integrations.",
       },
     ],
   }),
