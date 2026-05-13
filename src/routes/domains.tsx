@@ -120,47 +120,57 @@ const bettingPlatformGroups = [
 const additionalDomains = [
   {
     title: "Telecom & mobile services",
-    blurb: "Carrier-side value-added services and subscriber journeys.",
+    blurb:
+      "Carrier VAS stacks where subscriber journeys sit next to regulated release discipline.",
     items: [
-      "VAS: USSD, SMSC, MMSC, OTA, voicemail",
-      "Mobile money–adjacent USSD flows",
-      "Incident & change management alongside regression and performance testing",
+      "USSD, SMSC/MMSC, OTA and voicemail exercised with integration suites that mirror production topology",
+      "Mobile-money USSD and subscriber messaging validated against carrier-grade SLAs and peak-traffic profiles",
+      "Incident and change windows paired with regression packs so rollbacks stay predictable",
+      "Performance baselines captured before major promos or national messaging campaigns",
     ],
   },
   {
     title: "Location intelligence",
-    blurb: "Geo-aware APIs and compliance-oriented location workflows.",
+    blurb:
+      "Privacy-aware geo APIs: consent, compliance checks and automation at CI speed.",
     items: [
-      "Location request & compliance request APIs",
-      "Smart-zone and geo-policy scenarios",
-      "API automation embedded in CI/CD",
+      "Contract-driven coverage on location-request and compliance-request APIs — happy paths, abuse cases and throttling",
+      "Smart-zone policies, consent flows and geo edge cases traced straight to acceptance criteria",
+      "Rest Assured stacks wired into pipelines so geo regressions fail builds instead of leaking to staging",
+      "Evidence bundles for reviewers: payloads, decision traces and timestamps ready for audit questions",
     ],
   },
   {
     title: "Rewards & recognition",
-    blurb: "Enterprise recognition and engagement platforms.",
+    blurb:
+      "Enterprise programs where eligibility, payouts and audits have to stay in sync.",
     items: [
-      "Web services automation across full SDLC quality gates",
-      "Regression coverage for recognition program journeys",
-      "Code reviews and mentoring for test automation",
+      "End-to-end automation across recognition journeys — eligibility, issuance and downstream HR/finance hooks",
+      "Release gates backed by repeatable service packs rather than one-off exploratory passes",
+      "Peer review and mentoring on scripts so waits, data setup and flake handling stay consistent",
+      "Triage discipline that separates brittle integrations from genuine product regressions before sign-off",
     ],
   },
   {
     title: "Payments & commerce",
-    blurb: "Money movement, terminals, and operator back office.",
+    blurb:
+      "Checkout-grade flows across gateways, terminals, wallets and reconciliation.",
     items: [
-      "Payment gateways, POS and mobile payment flows",
-      "Back-office coordination across dev and field stakeholders",
-      "Load, stress and performance validation",
+      "Gateways, POS and mobile wallets covered for success, timeout, duplicate-submit and reconciliation outcomes",
+      "Plans co-developed with engineering, sales and field testers so scenarios reflect live merchant behavior",
+      "JMeter load, spike and soak profiles against payment-critical APIs with monitored SLAs",
+      "Settlement batches, adjustments and back-office reversals folded into the same regression rhythm",
     ],
   },
   {
     title: "Travel & mobility",
-    blurb: "High-volume consumer flows and partner integrations.",
+    blurb:
+      "Multi-supplier journeys where pricing, inventory and cancellations ripple across partners.",
     items: [
-      "Integration testing across partner APIs and inventory-style services",
-      "Reliability and regression on booking-adjacent transactional paths",
-      "Automation patterns portable to travel and mobility products",
+      "Partner API choreography — holds, repricing, seat or inventory contention and cancel/refund propagation",
+      "Search-to-confirmation flows hammered under concurrency so race conditions surface before peak seasons",
+      "Retries, webhooks and compensating transactions validated before holiday-scale booking windows",
+      "Reusable data factories and API-first harnesses so seasonal catalogs plug into the same automation spine",
     ],
   },
 ];
