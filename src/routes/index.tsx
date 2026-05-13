@@ -16,14 +16,16 @@ export const Route = createFileRoute("/")({
 });
 
 const domains = [
-  "Casino",
+  "Casino & Aggregators",
   "Sportsbook",
+  "Live Betting & Cashout",
+  "Bet Builder",
+  "Wallet & Payments",
+  "Bonus Engine",
   "Gamification",
-  "Identity (KYC)",
+  "Identity & KYC",
   "Notifications",
-  "Payments & Wallet",
-  "Back Office",
-  "Risk & Compliance",
+  "Back Office & CRM",
 ];
 
 function Index() {
